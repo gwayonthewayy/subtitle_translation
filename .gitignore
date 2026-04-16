@@ -8,7 +8,7 @@ __pycache__/
 .env
 .env.*
 
-audio.m4a
+/audio.m4a
 *.epub
 frida_sqlcipher.log
 
@@ -24,12 +24,12 @@ read_aladin_db.py
 
 tools/epubcheck-5.2.1/
 
-ko.aligned.srt
-ko.deepl.srt
-ko.gemini.srt
-ko.sample.srt
-ko.srt
-ko_gemini_transcript.txt
+/ko.aligned.srt
+/ko.deepl.srt
+/ko.gemini.srt
+/ko.sample.srt
+/ko.srt
+/ko_gemini_transcript.txt
 
 .DS_Store
 Thumbs.db
