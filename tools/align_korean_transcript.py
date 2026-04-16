@@ -229,23 +229,22 @@ def pack_clauses(clauses: List[str]) -> List[str]:
     return captions or [""]
 
 
-def wrap_caption(text: str) -> str:
+def wrap_caption(text: str) -> List[str]:
     wrapped = textwrap.wrap(
         text,
         width=MAX_LINE,
         break_long_words=False,
         break_on_hyphens=False,
     )
-    if len(wrapped) <= 2:
-        return "\n".join(wrapped)
-    merged = " ".join(wrapped)
-    wrapped = textwrap.wrap(
-        merged,
-        width=MAX_LINE,
-        break_long_words=False,
-        break_on_hyphens=False,
-    )
-    return "\n".join(wrapped[:2])
+    if not wrapped:
+        return [""]
+    blocks: List[str] = []
+    start_index = 0
+    if len(wrapped) > 1 and len(wrapped) % 2 == 1:
+        blocks.append(wrapped[0])
+        start_index = 1
+    blocks.extend("\n".join(wrapped[index:index + 2]) for index in range(start_index, len(wrapped), 2))
+    return blocks
 
 
 def postprocess_text(text: str) -> str:
@@ -322,7 +321,27 @@ def build_chunks(entries: List[TranscriptEntry], subs: List[srt.Subtitle], speak
                 alloc = max(MIN_DUR, min(MAX_DUR, duration * fraction))
                 alloc = min(alloc, max(MIN_DUR, remaining - MIN_DUR * (len(pieces) - piece_index - 1)))
                 piece_end = cursor + timedelta(seconds=alloc)
-            chunks.append(CaptionChunk(cursor, piece_end, wrap_caption(postprocess_text(piece)), seg_speaker))
+            piece_text = postprocess_text(piece)
+            display_blocks = wrap_caption(piece_text)
+            block_weights = [max(1, len(block.replace("\n", "").replace(" ", ""))) for block in display_blocks]
+            block_total_weight = sum(block_weights)
+            block_cursor = cursor
+            piece_duration = max(MIN_DUR, (piece_end - cursor).total_seconds())
+
+            for block_index, block in enumerate(display_blocks):
+                block_remaining = (piece_end - block_cursor).total_seconds()
+                if block_index == len(display_blocks) - 1:
+                    block_end = piece_end
+                else:
+                    block_fraction = block_weights[block_index] / block_total_weight
+                    block_alloc = max(MIN_DUR, min(MAX_DUR, piece_duration * block_fraction))
+                    min_future = MIN_DUR * (len(display_blocks) - block_index - 1)
+                    block_alloc = min(block_alloc, max(MIN_DUR, block_remaining - min_future))
+                    block_end = block_cursor + timedelta(seconds=block_alloc)
+
+                chunks.append(CaptionChunk(block_cursor, block_end, block, seg_speaker))
+                block_cursor = block_end + timedelta(seconds=GAP)
+
             cursor = piece_end + timedelta(seconds=GAP)
 
     return chunks
