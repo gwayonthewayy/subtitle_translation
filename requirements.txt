@@ -1,0 +1,7 @@
+srt
+deep-translator
+deepl
+openai
+torch
+transformers
+sentencepiece

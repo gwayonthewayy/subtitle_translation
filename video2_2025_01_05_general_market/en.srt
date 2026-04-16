@@ -1,0 +1,1048 @@
+1
+00:00:06,480 --> 00:00:07,480
+Okay, hello everyone.
+
+2
+00:00:07,481 --> 00:00:12,060
+Welcome to this week's Intervening on the
+Market Weekly Report, January 5th,
+
+3
+00:00:12,720 --> 00:00:14,940
+2024, starting the new year.
+
+4
+00:00:15,200 --> 00:00:17,987
+I just want to point
+out real quick, we do
+
+5
+00:00:17,988 --> 00:00:21,181
+have the two events
+coming up in Myrtle Beach.
+
+6
+00:00:21,220 --> 00:00:23,487
+And the reason why I'm
+pointing this out is because, first
+
+7
+00:00:23,488 --> 00:00:26,540
+of all, they're coming up
+soon, January 18th and 19th.
+
+8
+00:00:26,760 --> 00:00:31,320
+But we are going to be closing registration
+for the gala and for the birthday party.
+
+9
+00:00:31,321 --> 00:00:35,235
+We need to tidy things
+up and get the list
+
+10
+00:00:35,236 --> 00:00:38,660
+closed and start
+preparing for these events.
+
+11
+00:00:38,960 --> 00:00:43,540
+So you need to make... if you're coming,
+you need to register very quickly.
+
+12
+00:00:43,920 --> 00:00:46,055
+I'm not sure exactly when
+we're closing registration,
+
+13
+00:00:46,056 --> 00:00:48,141
+but it's probably sometime
+by the end of the week.
+
+14
+00:00:48,660 --> 00:00:53,300
+We will also be unveiling the Intervening
+Markets 360 platform.
+
+15
+00:00:53,320 --> 00:00:55,267
+That's going to be the
+platform that you will be
+
+16
+00:00:55,268 --> 00:00:59,060
+grandfathered into if
+you are a current member.
+
+17
+00:00:59,061 --> 00:01:03,960
+And it will eventually roll over into this
+platform.
+
+18
+00:01:04,280 --> 00:01:07,013
+We're not sure exactly
+when that's going to happen
+
+19
+00:01:07,014 --> 00:01:09,881
+after it debuts on
+January 18th at the gala.
+
+20
+00:01:10,480 --> 00:01:15,280
+But fairly soon after, maybe within weeks
+to a month or so.
+
+21
+00:01:15,640 --> 00:01:17,880
+But we'll see where we are at that point.
+
+22
+00:01:18,060 --> 00:01:19,660
+We're still making some tweaks on it.
+
+23
+00:01:19,820 --> 00:01:23,280
+And we will be making tweaks for some time
+to come.
+
+24
+00:01:23,281 --> 00:01:26,226
+We have lots of things
+planned, even though the current
+
+25
+00:01:26,227 --> 00:01:30,520
+version that I've been
+playing with lately is amazing.
+
+26
+00:01:30,900 --> 00:01:34,700
+We've got a lot more things planned,
+and it's just the tip of the iceberg.
+
+27
+00:01:35,140 --> 00:01:40,240
+So register soon, and we'll see you soon
+in Myrtle Beach.
+
+28
+00:01:40,380 --> 00:01:41,380
+I will see you.
+
+29
+00:01:41,700 --> 00:01:43,580
+Key components of market health.
+
+30
+00:01:43,920 --> 00:01:45,660
+Major indexes are negative.
+
+31
+00:01:45,860 --> 00:01:46,620
+Up-down volume.
+
+32
+00:01:46,621 --> 00:01:50,460
+You may think this is strange that it's
+positive, and I'm going to talk about
+
+33
+00:01:50,461 --> 00:01:56,000
+distribution-dominant and not really any
+accumulation in the averages.
+
+34
+00:01:56,001 --> 00:01:57,676
+But this is a little bit different
+formula.
+
+35
+00:01:57,700 --> 00:02:00,392
+This is a moving average
+formula that we use
+
+36
+00:02:00,393 --> 00:02:03,240
+on the New York Stock
+Exchange and the NASDAQ.
+
+37
+00:02:03,360 --> 00:02:08,080
+So not exactly the same, but I will be
+doing the analysis in just a second on the
+
+38
+00:02:08,081 --> 00:02:13,780
+individual, the daily work on the NASDAQ
+and the NYSE.
+
+39
+00:02:14,540 --> 00:02:15,980
+New highs, new lows, negative.
+
+40
+00:02:16,320 --> 00:02:18,300
+Individual stock participation,
+also negative.
+
+41
+00:02:18,540 --> 00:02:22,980
+Basically, we've got a picture here when
+we look at the components and we look at
+
+42
+00:02:22,981 --> 00:02:27,100
+the STEM model, which is basically
+assessing the individual stocks.
+
+43
+00:02:27,460 --> 00:02:32,080
+We've got a very difficult environment
+right now, and maybe some stocks work,
+
+44
+00:02:32,160 --> 00:02:34,160
+and there are a few stocks breaking out,
+of course.
+
+45
+00:02:34,560 --> 00:02:37,760
+NVIDIA, we added going with the leader.
+
+46
+00:02:39,600 --> 00:02:43,492
+TSM also, we didn't add that
+as an open position, but it was
+
+47
+00:02:43,493 --> 00:02:47,460
+trying to break out on Friday
+and looks pretty constructive.
+
+48
+00:02:47,700 --> 00:02:49,620
+But there's just not a lot of ideas.
+
+49
+00:02:50,800 --> 00:02:53,029
+And when there's not a
+lot of ideas, we're definitely
+
+50
+00:02:53,030 --> 00:02:56,120
+going to be at the very best
+at the cautious exposure.
+
+51
+00:02:56,540 --> 00:02:58,725
+But I think with all things
+taken into consideration, hard
+
+52
+00:02:58,726 --> 00:03:03,220
+penny is definitely the correct
+rating right now, if you will.
+
+53
+00:03:03,221 --> 00:03:07,820
+So SPY advisor models, now they're still
+on buy signals because they're long-term
+
+54
+00:03:07,821 --> 00:03:12,160
+trend-oriented, and they are going to take
+more downside to trigger.
+
+55
+00:03:12,280 --> 00:03:15,960
+And we didn't really come off that much
+off the highs on the SPY.
+
+56
+00:03:16,200 --> 00:03:19,380
+But I do think they're at risk,
+I think, of raising cash.
+
+57
+00:03:19,381 --> 00:03:24,800
+I don't think an outright buy signal,
+I'm sorry, sell signal is in the cards in
+
+58
+00:03:24,801 --> 00:03:27,320
+the near future, unless we had a pretty
+big decline.
+
+59
+00:03:28,080 --> 00:03:30,160
+But I think we are close.
+
+60
+00:03:30,320 --> 00:03:32,880
+So I just look at the individual models,
+and I can't always tell.
+
+61
+00:03:32,940 --> 00:03:36,980
+But it looks like a few of them are close
+to maybe hitting a sell signal,
+
+62
+00:03:37,000 --> 00:03:41,960
+which would raise maybe 25% to 50%,
+maybe cash.
+
+63
+00:03:43,880 --> 00:03:46,200
+Again, looking at those, those are very
+long-term oriented.
+
+64
+00:03:46,340 --> 00:03:49,280
+This is the 33 model, currently on the buy
+signal.
+
+65
+00:03:49,820 --> 00:03:52,420
+Interest rate environment has been pretty
+stable, and that's good.
+
+66
+00:03:52,500 --> 00:03:56,500
+We want to see interest rates stay pretty,
+you know, relatively stable here.
+
+67
+00:03:56,720 --> 00:03:59,900
+If they spike up much, you know,
+that's a sign of inflation.
+
+68
+00:03:59,901 --> 00:04:01,800
+If they plummet, that's a sign of
+recession.
+
+69
+00:04:02,100 --> 00:04:06,740
+So again, you know, looking at the rates,
+and I look at the one year, that's giving
+
+70
+00:04:06,741 --> 00:04:08,645
+us an indication of
+whether we're going to be
+
+71
+00:04:08,646 --> 00:04:10,560
+able to persist with
+this Goldilocks economy.
+
+72
+00:04:10,561 --> 00:04:13,640
+I mean, that's really important for a
+continued bull market.
+
+73
+00:04:13,800 --> 00:04:17,960
+But within an uptrend and within a bull
+market, even the strongest bull markets,
+
+74
+00:04:18,140 --> 00:04:19,040
+you have corrections.
+
+75
+00:04:19,041 --> 00:04:21,853
+And usually what happens
+is you get sentiment that
+
+76
+00:04:21,854 --> 00:04:24,600
+gets very bullish, and
+there's a lot of overinvestment.
+
+77
+00:04:24,740 --> 00:04:29,254
+And then the market needs
+to pull back and cool that froth
+
+78
+00:04:29,255 --> 00:04:32,220
+off, and that's where it
+looks like we're at right now.
+
+79
+00:04:32,580 --> 00:04:36,000
+The bullish advisors are coming in,
+the investors' intelligence.
+
+80
+00:04:36,001 --> 00:04:44,201
+But they're not down to levels that would
+be consistent with a bottom and a pullback.
+
+81
+00:04:44,760 --> 00:04:48,275
+What I also look at is the
+combinations of the ratios,
+
+82
+00:04:48,276 --> 00:04:50,940
+and we take the bulls
+divided by bulls and bears.
+
+83
+00:04:51,040 --> 00:04:54,317
+We're pretty frothy, and
+we've been frothy up there
+
+84
+00:04:54,318 --> 00:04:56,920
+a few times for the
+better part of a year or so.
+
+85
+00:04:56,921 --> 00:05:03,006
+Similar to if you go back to
+2021 or into 2021 going to 22,
+
+86
+00:05:03,007 --> 00:05:06,520
+where we stayed up in those
+frothy levels around that 80%.
+
+87
+00:05:06,521 --> 00:05:09,280
+And the market went a bit higher,
+but then topped.
+
+88
+00:05:09,540 --> 00:05:13,971
+So looking at the sentiment,
+definitely, you know, this is
+
+89
+00:05:13,972 --> 00:05:17,080
+limiting the upside somewhat
+if you base it just on this.
+
+90
+00:05:17,081 --> 00:05:20,560
+The real problem is, of course,
+is the distribution in the market.
+
+91
+00:05:20,940 --> 00:05:26,300
+And prior to us even seeing this heavy
+distribution, I had shorted and was
+
+92
+00:05:26,301 --> 00:05:32,380
+getting sort of smelling the winds,
+changing here, if you will.
+
+93
+00:05:32,880 --> 00:05:37,300
+Shorted on 12.9, still short with a stop
+at an all-time high in the SPY.
+
+94
+00:05:37,301 --> 00:05:41,082
+Anyway, the Dow was the
+one that came off more, so the
+
+95
+00:05:41,083 --> 00:05:43,860
+DIA would have been the
+better short, as I pointed out.
+
+96
+00:05:44,220 --> 00:05:49,063
+Also, the NYA, the New York
+Stock Exchange Composite, sorry
+
+97
+00:05:49,064 --> 00:05:53,740
+about that, has come off, you
+know, more percentage-wise.
+
+98
+00:05:54,200 --> 00:05:59,200
+Taking a look here, though, if you look at
+the volume, you can see that we're really,
+
+99
+00:05:59,400 --> 00:06:01,040
+again, still distribution dominant.
+
+100
+00:06:01,200 --> 00:06:04,560
+Now, around the holiday, you're going to
+see lower volume, but even in those lower
+
+101
+00:06:04,561 --> 00:06:10,320
+volume registers there, you don't see much
+in the way of any accumulation volume.
+
+102
+00:06:10,540 --> 00:06:12,760
+So it's all selling volume, churning days.
+
+103
+00:06:13,160 --> 00:06:18,260
+You look at the NASDAQ, it's not much
+different, except we didn't come off as much.
+
+104
+00:06:18,600 --> 00:06:21,140
+And that's why I'm wondering if this
+50-day is going to hold.
+
+105
+00:06:21,280 --> 00:06:22,620
+I don't think it's going to.
+
+106
+00:06:22,740 --> 00:06:24,700
+I think we're going to have to come in a
+bit more.
+
+107
+00:06:24,960 --> 00:06:27,492
+We just need to see
+some accumulation and see
+
+108
+00:06:27,493 --> 00:06:29,780
+setups before we can
+jump into this market.
+
+109
+00:06:29,980 --> 00:06:33,080
+And jumping into a market that's under
+distribution, that has no setups,
+
+110
+00:06:33,220 --> 00:06:38,960
+you know, in my experience, has not turned
+out to be a smart decision.
+
+111
+00:06:39,500 --> 00:06:45,000
+If you go back and you take a look,
+in the top, this top chart here is the
+
+112
+00:06:45,001 --> 00:06:54,120
+SPY, the SP500, going back to that 2021,
+going to 22 top, where I actually shorted
+
+113
+00:06:54,121 --> 00:06:56,220
+the market right here where this red line
+is.
+
+114
+00:06:56,420 --> 00:06:59,600
+And we had a head fake, and it went into
+new high ground.
+
+115
+00:06:59,620 --> 00:07:00,420
+I got stopped.
+
+116
+00:07:00,421 --> 00:07:04,240
+And the mistake that I made there was not
+re-shorting.
+
+117
+00:07:04,460 --> 00:07:07,001
+And you can see, too, if
+you look at the Minervini
+
+118
+00:07:07,002 --> 00:07:09,640
+indicators, that's where
+they actually turned red there.
+
+119
+00:07:09,641 --> 00:07:12,540
+I was shorting when we were still green on
+the TPR.
+
+120
+00:07:12,900 --> 00:07:16,751
+Similar to, if you come
+down here, this is the
+
+121
+00:07:16,752 --> 00:07:20,300
+current SPY, and this is
+where I just shorted on 12.9.
+
+122
+00:07:20,760 --> 00:07:25,840
+Similar situation where I shorted when we
+were green still, and then we started
+
+123
+00:07:25,841 --> 00:07:28,600
+getting that mixed picture where we went
+yellow, green, red.
+
+124
+00:07:28,601 --> 00:07:31,580
+Same thing here, I shorted, then we went
+yellow, green, red.
+
+125
+00:07:32,000 --> 00:07:37,820
+But back then, like I said, we went back
+into new high ground and got stopped there.
+
+126
+00:07:38,080 --> 00:07:40,393
+Now, if you look at the
+NASDAQ, the NASDAQ topped
+
+127
+00:07:40,394 --> 00:07:42,300
+over here and did not
+go into new high ground.
+
+128
+00:07:42,380 --> 00:07:44,240
+So it kept rolling over.
+
+129
+00:07:44,340 --> 00:07:47,526
+And that was really the
+key, I think, the key sign
+
+130
+00:07:47,527 --> 00:07:50,321
+that I should have
+re-shorted as we rolled over.
+
+131
+00:07:50,400 --> 00:07:54,480
+That was, if I grade that and look back,
+that was a mistake that I think I made of
+
+132
+00:07:54,481 --> 00:07:57,960
+not getting, putting a trade on that
+seemed pretty obvious at the time.
+
+133
+00:07:57,961 --> 00:08:01,440
+This is where we had a lot of divergence
+and a lot of participation problems.
+
+134
+00:08:01,820 --> 00:08:05,640
+And again, similar to now, we've got some
+divergences and participation problems.
+
+135
+00:08:05,840 --> 00:08:10,440
+If we just take a look also at the IBD
+Mutual Fund Index, I pointed this out last
+
+136
+00:08:10,441 --> 00:08:16,180
+week, big, big down week, crashing through
+the 200-day or the 40-week moving average,
+
+137
+00:08:16,500 --> 00:08:19,480
+continuing down, a very feeble rally.
+
+138
+00:08:19,660 --> 00:08:23,380
+You can see that was a very small rally
+week.
+
+139
+00:08:23,381 --> 00:08:27,540
+And then continuing to the downside,
+this is definitely not what I want to see.
+
+140
+00:08:28,260 --> 00:08:32,258
+So again, putting this all together,
+I think we're in a market that's...
+
+141
+00:08:32,259 --> 00:08:38,840
+we definitely got to respect
+the weight of evidence here.
+
+142
+00:08:39,420 --> 00:08:40,440
+Again, sentiment.
+
+143
+00:08:40,660 --> 00:08:42,200
+It's another chart of the sentiment.
+
+144
+00:08:42,360 --> 00:08:43,100
+We just looked at it.
+
+145
+00:08:43,220 --> 00:08:43,820
+Same thing.
+
+146
+00:08:44,000 --> 00:08:45,381
+Let me just... Okay,
+sorry about that.
+
+147
+00:08:45,540 --> 00:08:46,540
+I want to go to this.
+
+148
+00:08:53,380 --> 00:08:56,523
+You know, that change
+from the bulls to the bearer
+
+149
+00:08:56,524 --> 00:08:59,261
+sentiment, where we look at
+it from a contrary standpoint.
+
+150
+00:08:59,500 --> 00:09:02,160
+I want to see the put volume also start to
+rise.
+
+151
+00:09:02,360 --> 00:09:04,318
+You know, there's what
+people do, and there's
+
+152
+00:09:04,319 --> 00:09:06,300
+what people say, and
+I like to look at both.
+
+153
+00:09:06,540 --> 00:09:07,820
+I like to get them in agreement.
+
+154
+00:09:07,920 --> 00:09:12,000
+That's where you really get that really
+strong bearer sentiment or even bullish
+
+155
+00:09:12,001 --> 00:09:13,900
+sentiment is when you get both in
+agreement.
+
+156
+00:09:14,040 --> 00:09:16,315
+In this case, I'd like
+to see the put volume
+
+157
+00:09:16,316 --> 00:09:19,141
+spiking with a lot of
+bearishness coming back in.
+
+158
+00:09:19,560 --> 00:09:21,480
+But we're nowhere near that right now.
+
+159
+00:09:21,481 --> 00:09:24,520
+At least, you know, that's not what we're
+seeing currently.
+
+160
+00:09:24,920 --> 00:09:26,260
+And we've got volatility.
+
+161
+00:09:26,300 --> 00:09:27,780
+And that's the real problem.
+
+162
+00:09:27,940 --> 00:09:35,280
+The volatility, you know, if you've got it
+in the VIX, that's one thing.
+
+163
+00:09:35,281 --> 00:09:37,869
+And I'm definitely going
+to look at that and say, hey,
+
+164
+00:09:37,870 --> 00:09:40,480
+okay, this is a market that
+I may have to respect here.
+
+165
+00:09:41,040 --> 00:09:44,360
+But sometimes you don't get it in the
+individual stocks.
+
+166
+00:09:44,361 --> 00:09:48,007
+And in your area that
+you traffic in, maybe the
+
+167
+00:09:48,008 --> 00:09:50,600
+type of names, you
+don't get the volatility.
+
+168
+00:09:50,800 --> 00:09:53,635
+In this case, you know,
+we're getting some,
+
+169
+00:09:53,636 --> 00:09:56,341
+not crazy volatility in
+the individual stocks.
+
+170
+00:09:56,640 --> 00:10:01,320
+So it's not as prevalent, but it may start
+to leak over there.
+
+171
+00:10:01,500 --> 00:10:03,760
+And the real problem is there's just not a
+lot of setups.
+
+172
+00:10:04,000 --> 00:10:06,880
+There's not a lot of stocks that are set
+up in viable position.
+
+173
+00:10:07,820 --> 00:10:09,880
+So market is definitely still under
+pressure.
+
+174
+00:10:10,120 --> 00:10:13,200
+That recent rally has come on low volume.
+
+175
+00:10:13,560 --> 00:10:15,520
+And we really got to wait.
+
+176
+00:10:15,620 --> 00:10:16,980
+Just got to wait for confirmation.
+
+177
+00:10:17,620 --> 00:10:20,584
+Even if the market index
+is, let's say the S&P was
+
+178
+00:10:20,585 --> 00:10:23,040
+to rally from here and
+go into new high ground.
+
+179
+00:10:23,300 --> 00:10:24,780
+That's going to catch some headlines.
+
+180
+00:10:24,900 --> 00:10:28,280
+But, and this, of course, is spelt wrong.
+
+181
+00:10:28,281 --> 00:10:31,960
+A follow-trow day, through day.
+
+182
+00:10:33,680 --> 00:10:38,660
+You know, that would definitely,
+you know, maybe look good on paper.
+
+183
+00:10:38,840 --> 00:10:42,400
+But you really got to look at the
+individual stocks.
+
+184
+00:10:42,401 --> 00:10:43,820
+We're distribution dominant.
+
+185
+00:10:44,020 --> 00:10:47,720
+And if we got a follow-through day,
+even if we get some type of follow-through
+
+186
+00:10:47,721 --> 00:10:52,100
+in the market, and even if you hit new
+highs, if you've got an elevated
+
+187
+00:10:52,101 --> 00:10:55,240
+volatility and there's not many stocks,
+you still got to be careful.
+
+188
+00:10:55,241 --> 00:10:59,700
+So I would really just go right to the
+stocks and look for the setups.
+
+189
+00:10:59,720 --> 00:11:03,640
+And even the sentiment and all these
+other, you know, tea leaves, if you will,
+
+190
+00:11:03,780 --> 00:11:05,855
+if we had a lot of setups
+and they were working,
+
+191
+00:11:05,856 --> 00:11:08,441
+we'd definitely be in
+the market buying stocks.
+
+192
+00:11:08,880 --> 00:11:13,400
+S&P, like I said, the model is at risk to
+go into cash.
+
+193
+00:11:13,540 --> 00:11:16,440
+So I would be prepared to maybe raise some
+cash here.
+
+194
+00:11:16,540 --> 00:11:19,680
+If this market starts selling off more,
+we're going to definitely want,
+
+195
+00:11:19,860 --> 00:11:27,460
+if you're in the SPY and you're following
+our lead or our model to trade your 401ks,
+
+196
+00:11:27,640 --> 00:11:30,097
+maybe your longer term
+IRA money, we're going to
+
+197
+00:11:30,098 --> 00:11:32,640
+want to raise cash if that
+model says to raise cash.
+
+198
+00:11:32,760 --> 00:11:37,620
+And I've even suggested to raise some cash
+even prior to that.
+
+199
+00:11:37,820 --> 00:11:42,340
+In the last couple of weeks, I pointed
+out, you know, raising 25, maybe 50% cash.
+
+200
+00:11:42,540 --> 00:11:45,960
+I still think that's a good idea right
+here, even on this rally back,
+
+201
+00:11:46,020 --> 00:11:47,876
+because you're coming closer to the danger
+point.
+
+202
+00:11:47,900 --> 00:11:49,986
+If you haven't already
+lightened up, now that you're
+
+203
+00:11:49,987 --> 00:11:52,780
+coming back up near new
+highs, very close to that stop.
+
+204
+00:11:52,920 --> 00:11:56,000
+And if that stop were to trigger,
+you know, I would be maybe willing to
+
+205
+00:11:56,001 --> 00:11:57,840
+even, you know, put that money back to
+work.
+
+206
+00:11:57,960 --> 00:11:59,716
+We'd have to see what the circumstances
+were.
+
+207
+00:11:59,740 --> 00:12:03,260
+But right now, I think it's a good time to
+pull some chips off the table there.
+
+208
+00:12:05,420 --> 00:12:06,180
+That's about it.
+
+209
+00:12:06,300 --> 00:12:07,840
+Setups, discipline, we've got to wait.
+
+210
+00:12:08,620 --> 00:12:10,827
+Stock work, there's
+not a whole lot to show,
+
+211
+00:12:10,828 --> 00:12:12,940
+but we'll put what we
+have on a focus list.
+
+212
+00:12:12,941 --> 00:12:15,220
+And hope you had a great weekend.
+
+213
+00:12:15,221 --> 00:12:19,700
+And I'll see you tomorrow for live Q&A at
+1130 a.m.
+
+214
+00:12:19,880 --> 00:12:24,020
+Eastern Time with myself, Bob Weissman,
+and Mark Ritchie.
+
+215
+00:12:24,120 --> 00:12:25,160
+Bob is back from vacation.
+
+216
+00:12:25,600 --> 00:12:25,880
+All right.
+
+217
+00:12:26,220 --> 00:12:28,960
+Have a good rest of the night,
+and I'll see you soon.
+
+218
+00:12:29,060 --> 00:12:30,060
+Bye-bye.
