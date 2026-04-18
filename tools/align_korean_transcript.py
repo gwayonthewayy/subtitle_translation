@@ -361,6 +361,34 @@ def apply_speaker_labels(chunks: List[CaptionChunk]) -> List[srt.Subtitle]:
     return out
 
 
+def normalize_subtitle_timings(subtitles: List[srt.Subtitle]) -> List[srt.Subtitle]:
+    if not subtitles:
+        return subtitles
+
+    min_caption = timedelta(milliseconds=200)
+    gap = timedelta(milliseconds=20)
+
+    for index in range(len(subtitles) - 1):
+        current = subtitles[index]
+        nxt = subtitles[index + 1]
+
+        latest_end = nxt.start - gap
+        if current.end > latest_end:
+            current.end = max(current.start + min_caption, latest_end)
+
+        if nxt.start <= current.end:
+            nxt.start = current.end + gap
+
+        if nxt.end <= nxt.start:
+            nxt.end = nxt.start + min_caption
+
+    last = subtitles[-1]
+    if last.end <= last.start:
+        last.end = last.start + timedelta(seconds=1)
+
+    return subtitles
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("transcript", help="Korean transcript with coarse timestamps")
@@ -376,6 +404,7 @@ def main() -> None:
     speakers = infer_speakers(subs, default_speaker)
     chunks = build_chunks(entries, subs, speakers, default_speaker)
     labeled = apply_speaker_labels(chunks)
+    labeled = normalize_subtitle_timings(labeled)
 
     with open(args.output, "w", encoding="utf-8") as handle:
         handle.write(srt.compose(labeled))
