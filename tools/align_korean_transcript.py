@@ -16,11 +16,25 @@ MAX_CHARS = 40
 MAX_LINE = 22
 DEFAULT_SPEAKER = "Mark Ritchie"
 SPEAKER_LABELS = {
-    "Mark Ritchie": "마크리치",
-    "Mark Minervini": "마크미너비니",
+    "Mark Ritchie": "마크 리치",
+    "Mark Minervini": "마크 미너비니",
     "Brandon": "브랜든",
-    "Bob Weisman": "밥와이스먼",
+    "Bob Weisman": "밥 와이스먼",
     "Questioner": "질문자",
+}
+SPEAKER_ALIASES = {
+    "bob": "Bob Weisman",
+    "bob weisman": "Bob Weisman",
+    "밥 와이스먼": "Bob Weisman",
+    "mark richie": "Mark Ritchie",
+    "mark ritchie": "Mark Ritchie",
+    "마크 리치": "Mark Ritchie",
+    "mark minervini": "Mark Minervini",
+    "마크 미너비니": "Mark Minervini",
+    "brandon": "Brandon",
+    "브랜든": "Brandon",
+    "questioner": "Questioner",
+    "질문자": "Questioner",
 }
 QUESTION_START_PATTERNS = (
     r"\basking about\b",
@@ -88,50 +102,43 @@ def parse_timecode(raw: str) -> timedelta:
     return timedelta(hours=hours, minutes=minutes, seconds=seconds)
 
 
+def normalize_speaker(raw: str) -> str | None:
+    key = raw.strip().rstrip(":").lower()
+    return SPEAKER_ALIASES.get(key)
+
+
+def strip_inline_speaker(text: str) -> tuple[str, str | None]:
+    for pattern, speaker in (
+        (r"^(브랜든|Brandon):?\s*", "Brandon"),
+        (r"^(마크 리치|Mark Ritchie|Mark Richie):?\s*", "Mark Ritchie"),
+        (r"^(마크 미너비니|Mark Minervini):?\s*", "Mark Minervini"),
+        (r"^(밥 와이스먼|Bob Weisman|Bob):?\s*", "Bob Weisman"),
+        (r"^(질문자|Questioner):?\s*", "Questioner"),
+    ):
+        if re.match(pattern, text, flags=re.IGNORECASE):
+            return re.sub(pattern, "", text, flags=re.IGNORECASE).strip(), speaker
+    return text, None
+
+
 def parse_transcript(path: str) -> List[TranscriptEntry]:
     pattern = re.compile(r"^\[(\d{1,2}:\d{2}(?::\d{2})?)\]\s*(.+)$")
     entries: List[TranscriptEntry] = []
     with open(path, "r", encoding="utf-8") as handle:
-        for line in handle:
-            line = line.strip().lstrip("\ufeff")
+        for raw_line in handle:
+            line = raw_line.strip().lstrip("\ufeff")
             if not line:
                 continue
             match = pattern.match(line)
             if not match:
                 continue
-            text = match.group(2).strip()
             speaker = None
+            text = match.group(2).strip()
             bracket_speaker = re.match(r"^\[(.+?)\]\s*(.+)$", text)
             if bracket_speaker:
-                raw_name = bracket_speaker.group(1).strip()
+                speaker = normalize_speaker(bracket_speaker.group(1))
                 text = bracket_speaker.group(2).strip()
-                speaker_map = {
-                    "밥 와이스먼": "Bob Weisman",
-                    "밥와이스먼": "Bob Weisman",
-                    "마크 리치": "Mark Ritchie",
-                    "마크리치": "Mark Ritchie",
-                    "마크 미너비니": "Mark Minervini",
-                    "마크미너비니": "Mark Minervini",
-                    "브랜든": "Brandon",
-                    "브랜든 헤지패스": "Brandon",
-                    "질문자": "Questioner",
-                }
-                speaker = speaker_map.get(raw_name)
-            if text.startswith("브랜든:"):
-                speaker = "Brandon"
-                text = text.removeprefix("브랜든:").strip()
-            elif text.startswith("마크리치:"):
-                speaker = "Mark Ritchie"
-                text = text.removeprefix("마크리치:").strip()
-            elif text.startswith("마크 미너비니:") or text.startswith("마크미너비니:"):
-                speaker = "Mark Minervini"
-                text = text.split(":", 1)[1].strip()
-            elif text.startswith("밥 와이스먼:") or text.startswith("밥와이스먼:"):
-                speaker = "Bob Weisman"
-                text = text.split(":", 1)[1].strip()
-            elif text.startswith("질문자:"):
-                speaker = "Questioner"
-                text = text.removeprefix("질문자:").strip()
+            text, inline_speaker = strip_inline_speaker(text)
+            speaker = speaker or inline_speaker
             entries.append(TranscriptEntry(parse_timecode(match.group(1)), text, speaker))
     if not entries:
         raise SystemExit("No transcript entries were found.")
@@ -184,20 +191,21 @@ def infer_speakers(subs: List[srt.Subtitle], default_speaker: str) -> List[str]:
 
 
 def split_clauses(text: str) -> List[str]:
-    text = text.strip()
+    text = normalize_text(text)
     if not text:
         return []
 
-    sentence_parts = re.split(r"(?<=[.!?])\s+|(?<=요\.)\s+|(?<=다\.)\s+", text)
+    parts = re.split(r"(?<=[.!?])\s+|(?<=[다요죠니다])\s+", text)
     clauses: List[str] = []
-    for part in sentence_parts:
+    for part in parts:
         part = part.strip()
         if not part:
             continue
         if len(part) <= MAX_CHARS:
             clauses.append(part)
             continue
-        subparts = re.split(r"(?<=[,;:])\s+|(?<=요,)\s+|(?<=다,)\s+", part)
+
+        subparts = re.split(r"(?<=[,;:])\s+|(?<=\))\s+|(?<=\])\s+", part)
         buffer = ""
         for subpart in subparts:
             subpart = subpart.strip()
@@ -238,6 +246,7 @@ def wrap_caption(text: str) -> List[str]:
     )
     if not wrapped:
         return [""]
+
     blocks: List[str] = []
     start_index = 0
     if len(wrapped) > 1 and len(wrapped) % 2 == 1:
@@ -247,23 +256,6 @@ def wrap_caption(text: str) -> List[str]:
     return blocks
 
 
-def postprocess_text(text: str) -> str:
-    replacements = {
-        "질문자님": "질문하신 분",
-        "질문자님의 질문처럼": "질문하신 내용처럼",
-        "로우 치트": "로 치트",
-        "파워 플레이다운 정말 강력한 상승": "파워 플레이처럼 정말 강력한 상승",
-        "풀 리스트": "풀리스트",
-        "모델 북": "모델북",
-        "PTSG": "PSTG",
-        "RSI도 허용 가능한 수준": "RS도 허용 가능한 수준",
-        "50일선 본전 규칙": "50일선 브레이크이븐 규칙",
-    }
-    for before, after in replacements.items():
-        text = text.replace(before, after)
-    return text
-
-
 def dominant_speaker(speakers: List[str]) -> str:
     if not speakers:
         return DEFAULT_SPEAKER
@@ -271,31 +263,31 @@ def dominant_speaker(speakers: List[str]) -> str:
     return counts.most_common(1)[0][0]
 
 
-def infer_entry_speaker(entry: TranscriptEntry, dominant: str, previous: str, default_speaker: str) -> str:
+def infer_entry_speaker(
+    entry: TranscriptEntry,
+    dominant: str,
+    previous: str,
+    default_speaker: str,
+) -> str:
     if entry.speaker:
         return entry.speaker
-
-    text = entry.text
-    if text.startswith("자, 이제 Q&A를 진행해 보겠습니다"):
-        return default_speaker
-    if text.startswith("브랜든,"):
-        return default_speaker
-    if re.search(r"(질문합니다|묻습니다|의견을 묻고 있네요|질문은|질문이네요)", text):
-        return "Questioner"
-    if re.search(r"(답변해주시겠어요|설명해 주시겠어요)", text):
-        return previous or dominant or default_speaker
     return previous or dominant or default_speaker
 
 
-def build_chunks(entries: List[TranscriptEntry], subs: List[srt.Subtitle], speakers: List[str], default_speaker: str) -> List[CaptionChunk]:
+def build_chunks(
+    entries: List[TranscriptEntry],
+    subs: List[srt.Subtitle],
+    speakers: List[str],
+    default_speaker: str,
+) -> List[CaptionChunk]:
     chunks: List[CaptionChunk] = []
     last_end = subs[-1].end if subs else timedelta()
     previous_speaker = default_speaker
 
     for index, entry in enumerate(entries):
         next_start = entries[index + 1].start if index + 1 < len(entries) else last_end
-        seg_subs = []
-        seg_speakers = []
+        seg_subs: List[srt.Subtitle] = []
+        seg_speakers: List[str] = []
         for sub, speaker in zip(subs, speakers):
             if entry.start <= sub.start < next_start:
                 seg_subs.append(sub)
@@ -303,6 +295,8 @@ def build_chunks(entries: List[TranscriptEntry], subs: List[srt.Subtitle], speak
 
         seg_start = seg_subs[0].start if seg_subs else entry.start
         seg_end = seg_subs[-1].end if seg_subs else next_start
+        if seg_end <= seg_start:
+            seg_end = seg_start + timedelta(seconds=MIN_DUR)
         seg_speaker = infer_entry_speaker(entry, dominant_speaker(seg_speakers), previous_speaker, default_speaker)
         previous_speaker = seg_speaker
 
@@ -318,12 +312,16 @@ def build_chunks(entries: List[TranscriptEntry], subs: List[srt.Subtitle], speak
                 piece_end = seg_end
             else:
                 fraction = weights[piece_index] / total_weight
-                alloc = max(MIN_DUR, min(MAX_DUR, duration * fraction))
-                alloc = min(alloc, max(MIN_DUR, remaining - MIN_DUR * (len(pieces) - piece_index - 1)))
+                alloc = max(MIN_DUR, duration * fraction)
+                min_future = MIN_DUR * (len(pieces) - piece_index - 1)
+                alloc = min(alloc, max(MIN_DUR, remaining - min_future))
                 piece_end = cursor + timedelta(seconds=alloc)
-            piece_text = postprocess_text(piece)
-            display_blocks = wrap_caption(piece_text)
-            block_weights = [max(1, len(block.replace("\n", "").replace(" ", ""))) for block in display_blocks]
+
+            display_blocks = wrap_caption(piece)
+            block_weights = [
+                max(1, len(block.replace("\n", "").replace(" ", "")))
+                for block in display_blocks
+            ]
             block_total_weight = sum(block_weights)
             block_cursor = cursor
             piece_duration = max(MIN_DUR, (piece_end - cursor).total_seconds())
@@ -334,7 +332,7 @@ def build_chunks(entries: List[TranscriptEntry], subs: List[srt.Subtitle], speak
                     block_end = piece_end
                 else:
                     block_fraction = block_weights[block_index] / block_total_weight
-                    block_alloc = max(MIN_DUR, min(MAX_DUR, piece_duration * block_fraction))
+                    block_alloc = max(MIN_DUR, piece_duration * block_fraction)
                     min_future = MIN_DUR * (len(display_blocks) - block_index - 1)
                     block_alloc = min(block_alloc, max(MIN_DUR, block_remaining - min_future))
                     block_end = block_cursor + timedelta(seconds=block_alloc)
